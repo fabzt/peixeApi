@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Peixes extends Model
 {
-    //
+    protected $fillable = [
+        'nome',
+        'especie',
+        'preco',
+        'caracteristica',
+    ];
 }

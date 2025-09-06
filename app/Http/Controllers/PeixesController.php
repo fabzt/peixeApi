@@ -46,7 +46,7 @@ class PeixesController extends Controller
         // Validação dos dados recebidos
         $validator = Validator::make($request->all(), [
             'nome' => 'required',
-            'marca' => 'required',
+            'especie' => 'required',
             'preco' => 'required|numeric',
             'caracteristica' => 'required',
         ]);
@@ -131,7 +131,7 @@ class PeixesController extends Controller
 
         // Atualizando os dados
         $registroBanco->nome = $request->nome;
-        $registroBanco->marca = $request->marca;
+        $registroBanco->especie = $request->especie;
         $registroBanco->preco = $request->preco;
         $registroBanco->caracteristica = $request->caracteristica;
 
